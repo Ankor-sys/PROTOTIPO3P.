@@ -679,6 +679,7 @@ public class Asignacion_cursos_alumno extends javax.swing.JInternalFrame {
             PreparedStatement pst = cn.prepareStatement("select codigo_seccion from secciones where nombre_seccion=?");
             pst.setString(1, cbx_seccion.getSelectedItem().toString());
 
+            
             ResultSet rs = pst.executeQuery();
 
             //llenar combobox para el comentaario
