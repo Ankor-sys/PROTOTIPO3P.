@@ -65,7 +65,7 @@
                       <Component id="btnIniciar" min="-2" pref="77" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="239" max="32767" attributes="0"/>
+              <EmptySpace pref="274" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -92,6 +92,7 @@
                   </Group>
                   <Component id="btnIniciar" min="-2" max="-2" attributes="0"/>
               </Group>
+              <EmptySpace pref="53" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>

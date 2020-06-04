@@ -36,9 +36,8 @@ public class Inicio extends javax.swing.JFrame {
     private Maestros ventana_ma;
     private Asignacion_cursos_alumno venta_as2;
     private Asignacion_cursos_maestros ventana_as1;
-    private Notas ventana_notas;
     private Ingreso_Notas ventana_ingreso;
-    private M_TipoNota ventana_tn;
+  
     
     public Inicio() {
         initComponents();
@@ -69,19 +68,15 @@ public class Inicio extends javax.swing.JFrame {
         jMenuItem10 = new javax.swing.JMenuItem();
         jMenuItem11 = new javax.swing.JMenuItem();
         jMenuItem12 = new javax.swing.JMenuItem();
-        jMenuItem18 = new javax.swing.JMenuItem();
         jMenuItem13 = new javax.swing.JMenuItem();
         jMenuItem14 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem15 = new javax.swing.JMenuItem();
-        jMenuItem16 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
-        jMenuItem4 = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
         jMenuItem5 = new javax.swing.JMenuItem();
         jMenu6 = new javax.swing.JMenu();
-        jMenuItem6 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
 
@@ -156,14 +151,6 @@ public class Inicio extends javax.swing.JFrame {
         });
         jMenu1.add(jMenuItem12);
 
-        jMenuItem18.setText("Tipo Nota");
-        jMenuItem18.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem18ActionPerformed(evt);
-            }
-        });
-        jMenu1.add(jMenuItem18);
-
         jMenuItem13.setText("Alumnos");
         jMenuItem13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -200,26 +187,9 @@ public class Inicio extends javax.swing.JFrame {
         });
         jMenu3.add(jMenuItem15);
 
-        jMenuItem16.setText("Ingreso de Notas");
-        jMenuItem16.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem16ActionPerformed(evt);
-            }
-        });
-        jMenu3.add(jMenuItem16);
-
         jMenuBar1.add(jMenu3);
 
         jMenu4.setText("Informes");
-
-        jMenuItem4.setText("Consultas");
-        jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem4ActionPerformed(evt);
-            }
-        });
-        jMenu4.add(jMenuItem4);
-
         jMenuBar1.add(jMenu4);
 
         jMenu5.setText("Herramientas");
@@ -235,15 +205,6 @@ public class Inicio extends javax.swing.JFrame {
         jMenuBar1.add(jMenu5);
 
         jMenu6.setText("Ayuda");
-
-        jMenuItem6.setText("Consultar");
-        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem6ActionPerformed(evt);
-            }
-        });
-        jMenu6.add(jMenuItem6);
-
         jMenuBar1.add(jMenu6);
 
         jMenu2.setText("Salir");
@@ -290,17 +251,6 @@ public class Inicio extends javax.swing.JFrame {
        dispose();
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
-    private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-        // TODO add your handling code here:
-        Consulta_notas ventana = new Consulta_notas();
-        jDesktopPane1.add(ventana);
-        //centrar intenal
-        Dimension desktopSize = jDesktopPane1.getSize();
-        Dimension FrameSize = ventana.getSize();
-        ventana.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
-        ventana.show();
-    }//GEN-LAST:event_jMenuItem4ActionPerformed
-
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
         // TODO add your handling code here:
         try        
@@ -318,19 +268,6 @@ public class Inicio extends javax.swing.JFrame {
         ie.printStackTrace();     
     }
     }//GEN-LAST:event_jMenuItem5ActionPerformed
-
-    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
-        // TODO add your handling code here:
-        
-        try {
-            String url = "C:\\Users\\SEBAS\\Desktop\\P\\P3GA1\\MANUAL DE ADMINISTRADOR.pdf";
-        ProcessBuilder p = new ProcessBuilder();
-        p.command("cmd.exe", "/C", url);
-            p.start();
-        } catch (IOException ex) {
-            Logger.getLogger(Inicio.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_jMenuItem6ActionPerformed
 
     private void jMenuItem7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem7ActionPerformed
         ventana_C=new Carreras();
@@ -420,36 +357,6 @@ public class Inicio extends javax.swing.JFrame {
         ventana_ma.show();
     }//GEN-LAST:event_jMenuItem14ActionPerformed
 
-    private void jMenuItem18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem18ActionPerformed
-        // TODO add your handling code here:
-        
-        ventana_tn= new M_TipoNota();
-       jDesktopPane1.add(ventana_tn);
-       
-       Dimension desktopSize = jDesktopPane1.getSize();
-        Dimension FrameSize = ventana_tn.getSize();
-        ventana_tn.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
-        
-        /*Dimension desktopSize = jDesktopPane1.getSize();
-        Dimension FrameSize = ventana_tn.getSize();
-        ventana_tn.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
-        ventana_tn.show();*/
-    }//GEN-LAST:event_jMenuItem18ActionPerformed
-
-    private void jMenuItem16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem16ActionPerformed
-
-        ventana_ingreso= new Ingreso_Notas();
-        jDesktopPane1.add(ventana_ingreso);
-        Dimension desktopSize = jDesktopPane1.getSize();
-        Dimension FrameSize = ventana_ingreso.getSize();
-        ventana_ingreso.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
-        //centrar intenal
-        /*Dimension desktopSize = jDesktopPane1.getSize();
-        Dimension FrameSize = ventana_ingreso.getSize();
-        ventana_ingreso.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
-        ventana_ingreso.show(); */
-    }//GEN-LAST:event_jMenuItem16ActionPerformed
-
     private void jMenuItem15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem15ActionPerformed
         ventana_as1= new Asignacion_cursos_maestros();
         jDesktopPane1.add(ventana_as1);
@@ -527,13 +434,9 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem13;
     private javax.swing.JMenuItem jMenuItem14;
     private javax.swing.JMenuItem jMenuItem15;
-    private javax.swing.JMenuItem jMenuItem16;
-    private javax.swing.JMenuItem jMenuItem18;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JMenuItem jMenuItem8;
     private javax.swing.JMenuItem jMenuItem9;
