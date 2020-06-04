@@ -34,7 +34,6 @@ public class Inicio extends javax.swing.JFrame {
     private Sedes ventana_sede;
     private Alumnos ventana_al;
     private Maestros ventana_ma;
-    private Asignacion_cursos_alumno venta_as2;
     private Asignacion_cursos_maestros ventana_as1;
    
   
@@ -65,7 +64,6 @@ public class Inicio extends javax.swing.JFrame {
         jMenuItem13 = new javax.swing.JMenuItem();
         jMenuItem14 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
-        jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem15 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
         jMenu5 = new javax.swing.JMenu();
@@ -164,14 +162,6 @@ public class Inicio extends javax.swing.JFrame {
         jMenuBar1.add(jMenu1);
 
         jMenu3.setText("Procesos");
-
-        jMenuItem3.setText("Asignar Cursos a Alumno");
-        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem3ActionPerformed(evt);
-            }
-        });
-        jMenu3.add(jMenuItem3);
 
         jMenuItem15.setText("Asignar Cursos a Maestro");
         jMenuItem15.addActionListener(new java.awt.event.ActionListener() {
@@ -362,18 +352,6 @@ public class Inicio extends javax.swing.JFrame {
         ventana_as1.show();
     }//GEN-LAST:event_jMenuItem15ActionPerformed
 
-    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
-        venta_as2= new Asignacion_cursos_alumno();
-        jDesktopPane1.add(venta_as2);
-
-        //centrar intenal
-        Dimension desktopSize = jDesktopPane1.getSize();
-        Dimension FrameSize = venta_as2.getSize();
-        venta_as2.setLocation((desktopSize.width - FrameSize.width)/2, (desktopSize.height- FrameSize.height)/2);
-        venta_as2.show();
-
-    }//GEN-LAST:event_jMenuItem3ActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -429,7 +407,6 @@ public class Inicio extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem14;
     private javax.swing.JMenuItem jMenuItem15;
     private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JMenuItem jMenuItem8;
