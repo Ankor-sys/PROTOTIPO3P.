@@ -40,6 +40,7 @@ public class Inicio extends javax.swing.JFrame {
     
     public Inicio() {
         initComponents();
+        this.setTitle("Sebastian Moreira 9959-8-7960");
     }
 
     /**
