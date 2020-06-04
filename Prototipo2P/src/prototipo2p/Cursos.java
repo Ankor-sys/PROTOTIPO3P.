@@ -91,8 +91,6 @@ public class Cursos extends javax.swing.JInternalFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         tbl_cursos = new javax.swing.JTable();
         jButton5 = new javax.swing.JButton();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
 
         setClosable(true);
         setIconifiable(true);
@@ -206,15 +204,6 @@ public class Cursos extends javax.swing.JInternalFrame {
             }
         });
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 310, -1, -1));
-
-        jTextArea1.setBackground(new java.awt.Color(204, 204, 204));
-        jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
-        jTextArea1.setRows(5);
-        jTextArea1.setText("                        Para modificar:\n1. Debe buscar el codigo de la curso\n2. Luego seleccionar la fila de la tabla \n3. Modificar los campos necesarios\n4. Darle click al boton Modificar (Icono del \n    Lápiz).");
-        jScrollPane2.setViewportView(jTextArea1);
-
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 366, 350, 130));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -375,8 +364,6 @@ public class Cursos extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTable tbl_cursos;
     private javax.swing.JTextField txt_buscar;
     private javax.swing.JTextField txt_codigo;

@@ -55,13 +55,11 @@ public class Carreras extends javax.swing.JInternalFrame {
         jButton3 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         txt_estatus = new javax.swing.JTextField();
-        cbx_facultad = new javax.swing.JComboBox<>();
+        cbx_facultad = new javax.swing.JComboBox<String>();
         lbl_codigofac = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         tbl_carrera = new javax.swing.JTable();
         jButton5 = new javax.swing.JButton();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
 
         setClosable(true);
         setIconifiable(true);
@@ -202,15 +200,6 @@ public class Carreras extends javax.swing.JInternalFrame {
             }
         });
         getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(466, 288, -1, -1));
-
-        jTextArea1.setBackground(new java.awt.Color(204, 204, 204));
-        jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
-        jTextArea1.setRows(5);
-        jTextArea1.setText("                        Para modificar:\n1. Debe buscar el codigo de la carrera\n2. Luego seleccionar la fila de la tabla \n3. Modificar los campos necesarios\n4. Darle click al boton Modificar (Icono del \n    Lápiz).");
-        jScrollPane2.setViewportView(jTextArea1);
-
-        getContentPane().add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 275, 350, 130));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -479,8 +468,6 @@ public class Carreras extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JLabel lbl_codigofac;
     private javax.swing.JTable tbl_carrera;
     private javax.swing.JTextField txt_buscar;
