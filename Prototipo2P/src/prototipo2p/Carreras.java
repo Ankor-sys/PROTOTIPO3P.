@@ -15,7 +15,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Brayan Cifuentes
+ * @author Sebas Moreira
  */
 public class Carreras extends javax.swing.JInternalFrame {
 

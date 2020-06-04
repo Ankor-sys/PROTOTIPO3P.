@@ -11,7 +11,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Brayan Cifuentes
+ * @author Sebas Moreira
  */
 public class Alumnos extends javax.swing.JInternalFrame {
 

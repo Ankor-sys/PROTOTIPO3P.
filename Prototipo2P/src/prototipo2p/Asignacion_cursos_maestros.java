@@ -12,7 +12,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Brayan Cifuentes
+ * @author Sebas Moreira
  */
 public class Asignacion_cursos_maestros extends javax.swing.JInternalFrame {
 

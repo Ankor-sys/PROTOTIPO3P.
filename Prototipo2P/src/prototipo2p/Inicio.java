@@ -18,7 +18,7 @@ import javax.swing.ImageIcon;
 
 /**
  *
- * @author Brayan Cifuentes
+ * @author Sebas Moreira
  */
 public class Inicio extends javax.swing.JFrame {
 
@@ -36,7 +36,7 @@ public class Inicio extends javax.swing.JFrame {
     private Maestros ventana_ma;
     private Asignacion_cursos_alumno venta_as2;
     private Asignacion_cursos_maestros ventana_as1;
-    private Ingreso_Notas ventana_ingreso;
+   
   
     
     public Inicio() {
@@ -52,13 +52,7 @@ public class Inicio extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        ImageIcon icon= new ImageIcon(getClass().getResource("/Imagenes/fondoMDI.jpeg"));
-        Image image= icon.getImage();
-        jDesktopPane1 = new javax.swing.JDesktopPane(){
-            public void paintComponent(Graphics g){
-                g.drawImage(image,0,0,getWidth(),getHeight(),this);
-            }
-        };
+        jDesktopPane1 = new javax.swing.JDesktopPane();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();

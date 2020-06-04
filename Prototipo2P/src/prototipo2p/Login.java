@@ -12,7 +12,7 @@ import prototipo2p.Inicio;
 
 /**
  *
- * @author Sucely Alvarez
+ * @author Sebas Moreira
  */
 public class Login extends javax.swing.JFrame {
 

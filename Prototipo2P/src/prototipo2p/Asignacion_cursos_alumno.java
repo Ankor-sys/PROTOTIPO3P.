@@ -11,7 +11,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Brayan Cifuentes
+ * @author Sebas Moreira
  */
 public class Asignacion_cursos_alumno extends javax.swing.JInternalFrame {
 
@@ -554,7 +554,7 @@ public class Asignacion_cursos_alumno extends javax.swing.JInternalFrame {
 //Codigo que permite insertar registros en al base de datos
         try {
             Connection cn = DriverManager.getConnection(BD, Usuario, Clave);
-            PreparedStatement pst = cn.prepareStatement("insert into asignacioncursosalumnos values(?,?,?,?,?,?,?,?,?)");
+            PreparedStatement pst = cn.prepareStatement("insert into asignacioncursosalumnos values(?,?,?,?,?,?,?,?)");
 
             pst.setString(1, lbl_carrera.getText().trim());
             pst.setString(2, lbl_sede.getText().trim());
@@ -564,7 +564,7 @@ public class Asignacion_cursos_alumno extends javax.swing.JInternalFrame {
             pst.setString(6, lbl_curso.getText().trim());
             pst.setString(7, lbl_alumno.getText().trim());
             pst.setString(8, "0");
-            pst.setString(9, null);
+            
 
 
             pst.executeUpdate();
